@@ -1,0 +1,17 @@
+version: 2.1
+
+jobs:
+  build:
+    macos:
+      xcode: 11.3.0
+
+    steps:
+      # Commands will execute in macOS container
+      # with Xcode 11.3 installed
+      - run: xcodebuild -version
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
