@@ -4,5 +4,10 @@ container:
 trail_task:
   trail_script:
     - echo "hi"
-    -  ls
-    -  flutter doctor
+    - ls
+    - flutter --version
+mac_task:
+  osx_instance:
+    image: catalina-flutter
+    trail_mac_script:
+      - xcodebuild -version
