@@ -1,15 +1,20 @@
 osx_instance:
   image: catalina-flutter
 
+task_template:
+  env:
+    Merchants=('demoMerchant' "merchant1")
+
+
 task:
   name: trail
   trail_script:
     - echo "hi"
-    - ls
-    - flutter --version
+    - sh test.sh
 
 task:
   name: mac_tsak
   trail_mac_script:
     - xcodebuild -version
     - flutter --version
+
