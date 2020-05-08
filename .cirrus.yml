@@ -1,12 +1,15 @@
 osx_instance:
   image: catalina-flutter
 
-trail_task:
+task:
+  name: trail
   trail_script:
     - echo "hi"
     - ls
     - flutter --version
-mac_task:
-    trail_mac_script:
-      - xcodebuild -version
-      - flutter --version
+
+task:
+  name: mac_tsak
+  trail_mac_script:
+    - xcodebuild -version
+    - flutter --version
