@@ -2,4 +2,7 @@ container:
   image: cirrusci/flutter:latest
 
 trail_task:
-  trail_script: sh test.sh
+  trail_script:
+    - echo "hi"
+    -  ls
+    -  flutter doctor
