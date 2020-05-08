@@ -1,5 +1,5 @@
-container:
-  image: cirrusci/flutter:latest
+osx_instance:
+  image: catalina-flutter
 
 trail_task:
   trail_script:
@@ -7,7 +7,6 @@ trail_task:
     - ls
     - flutter --version
 mac_task:
-  osx_instance:
-    image: catalina-flutter
     trail_mac_script:
       - xcodebuild -version
+      - flutter --version
